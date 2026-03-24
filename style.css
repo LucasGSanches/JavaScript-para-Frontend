@@ -8,10 +8,11 @@ button {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    min-height: 10vh;
+    min-height: 50px;
     box-sizing: border-box;
     border: solid #227622 2px;
     padding: 5px;
@@ -20,15 +21,45 @@ header {
 }
 
 main {
-    min-height: 80vh;
     box-sizing: border-box;
+    flex: 1;
 }
 
 footer {
-    min-height: 10vh;
     box-sizing: border-box;
+    min-height: 50px;
 }
 
 header a {
     color: blue;
+}
+
+.class_ex2 {
+    background: linear-gradient(1deg, blue, green, red);
+}
+
+.div_ex2{
+    width: fit-content;
+}
+
+* {
+    padding: 1px;
+    margin: 1px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cards section {
+    text-align: center;
+    align-content: center;
+    height: 100px;
+    width: 200px;
+    border: solid black 2px;
+}
+
+#cards .especial_class {
+    border: dashed orange 4px;
 }
